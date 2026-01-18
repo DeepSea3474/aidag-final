@@ -184,3 +184,4 @@ MIT License
 **AIDAG Chain** - Kripto tarihinde bir ilk, yapay zeka yönetimli ilk coin.
 
 🔗 https://aidag-chain.com | 🐦 @aidagDAO | 💬 t.me/Aidag_Chain_Global_Community
+
