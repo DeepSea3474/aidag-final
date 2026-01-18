@@ -1,0 +1,13 @@
+name = "aidag-chain"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "out"
+
+# Cloudflare Pages Functions dizini
+# /functions klasöründeki dosyalar otomatik olarak serverless fonksiyon olur
+
+[vars]
+NEXT_PUBLIC_CHAIN_ID = "56"
+
+# OPENAI_API_KEY Cloudflare Dashboard'da Secret olarak eklenmeli:
+# Settings > Environment Variables > Add variable (Encrypt seçili)
+# veya CLI: wrangler pages secret put OPENAI_API_KEY
