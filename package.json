@@ -14,3 +14,12 @@
     "@reown/appkit": "^1.8.16",
     "@reown/appkit-ui": "^1.8.16",
     "wagmi": "^3.3.4",
+    "ox": "^0.11.3"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^18.2.0",
+    "@types/node": "^20.0.0"
+  }
+}
