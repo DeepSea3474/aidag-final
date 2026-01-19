@@ -1,11 +1,15 @@
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export',
-  trailingSlash: true,
+  compress: true,
   images: {
-    unoptimized: true
+    formats: ['image/avif', 'image/webp'],
+    unoptimized: true,
   },
   env: {
     NEXT_PUBLIC_BSC_RPC: process.env.NEXT_PUBLIC_BSC_RPC,
@@ -24,4 +28,4 @@ const nextConfig = {
   ],
 };
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);

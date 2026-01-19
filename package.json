@@ -5,37 +5,30 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next build",
-    "deploy": "next build && npx wrangler pages deploy out --project-name=aidag-chain"
+    "start": "next start"
   },
   "dependencies": {
     "@coinbase/wallet-sdk": "^4.3.7",
+    "@ethereumjs/block": "^4.0.0",
+    "@ethereumjs/common": "^3.0.0",
+    "@ethereumjs/tx": "^4.0.0",
+    "@ethereumjs/vm": "^6.0.0",
+    "@metamask/eth-sig-util": "^6.0.0",
+    "@metamask/safe-event-emitter": "^2.0.0",
+    "@reown/appkit": "^1.8.16",
+    "@reown/appkit-ui": "^1.8.16",
     "@walletconnect/ethereum-provider": "^2.23.3",
-    "@walletconnect/web3-provider": "^1.8.0",
-    "@web3modal/ethers": "^5.1.11",
+    "@walletconnect/sign-client": "^2.16.1",
+    "@walletconnect/universal-provider": "^2.16.1",
+    "axios": "^1.7.2",
     "drizzle-zod": "^0.8.3",
     "ethers": "^6.16.0",
     "i18next": "^25.7.3",
-    "lucide-react": "^0.562.0",
     "next": "^14.0.0",
-    "openai": "^6.16.0",
-    "p-limit": "^7.2.0",
-    "p-retry": "^7.1.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-i18next": "^16.5.1",
-    "zod": "^3.25.76",
-    "zod-validation-error": "^5.0.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.28.5",
-    "@babel/preset-react": "^7.28.5",
-    "@tailwindcss/postcss": "^4.1.18",
-    "@types/react": "19.2.7",
-    "autoprefixer": "^10.4.23",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.18",
-    "typescript": "5.9.3"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.1",
+    "viem": "^2.9.0",
+    "wagmi": "^3.3.4"
   }
 }
